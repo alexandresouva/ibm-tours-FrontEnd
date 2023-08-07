@@ -1,0 +1,48 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 6rem 4rem 3rem 4rem;
+  width: 100%;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__brand img {
+  height: 3rem;
+}
+
+.footer__brand p {
+  color: #55c57a;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer__author {
+  color: #777;
+  font-size: 1.4rem;
+}
+
+.footer__author a:link,
+.footer__author a:visited {
+  color: #777;
+  padding-bottom: 2px; 
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: .3 all;
+}
+
+.footer__author a:hover,
+.footer__author a:active {
+  color: #55c57a;
+  border-bottom: 1px solid transparent;
+}
