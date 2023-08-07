@@ -1,5 +1,4 @@
-main {
-  background: url(/assets/imagens/background-completo.png);
-  background-size: cover;
-  min-height: 60vh;
+.page-grid {
+  background-color: #f7f7f7;
+  min-height: 100vh;
 }

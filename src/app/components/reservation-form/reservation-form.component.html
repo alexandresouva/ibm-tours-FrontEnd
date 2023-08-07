@@ -1,0 +1,26 @@
+<div class="form-container">
+  <h2 class="form-title">Agende sua reserva!</h2>
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="">Nome do hóspede</label>
+      <input class="form__input" type="text" [value]="reservation.nomeHospede">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Início da reserva</label>
+      <input class="form__input" type="date" [value]="reservation.dataInicio">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Fim da reserva</label>
+      <input class="form__input" type="date" [value]="reservation.dataFim">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Pessoas</label>
+      <input class="form__input" type="number" [value]="reservation.quantidadePessoas">
+    </div>
+
+    <div class="btns">
+      <button (click)="createReservation($event)" class="form__btn">Confirmar</button>
+    </div>
+
+  </form>
+</div>
