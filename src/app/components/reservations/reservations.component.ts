@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Reservation } from 'src/app/models/Reservation';
+import { ReservationService } from 'src/app/services/reservation.service';
 import { Status } from 'src/utils/enums/IStatus';
 
 @Component({
@@ -7,34 +9,11 @@ import { Status } from 'src/utils/enums/IStatus';
   styleUrls: ['./reservations.component.css'],
 })
 export class ReservationsComponent implements OnInit {
-  constructor() {}
+  constructor(private service: ReservationService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.findAll().subscribe((list) => (this.reservationsList = list));
+  }
 
-  reservationsList = [
-    // {
-    //   id: 1,
-    //   nomeHospede: 'Fulano de Tal',
-    //   dataInicio: '2023-08-10',
-    //   dataFim: '2023-08-15',
-    //   quantidadePessoas: 4,
-    //   status: Status.CANCELADA,
-    // },
-    // {
-    //   id: 2,
-    //   nomeHospede: 'Fulano de Tal',
-    //   dataInicio: '2023-08-10',
-    //   dataFim: '2023-08-15',
-    //   quantidadePessoas: 4,
-    //   status: Status.CANCELADA,
-    // },
-    // {
-    //   id: 2,
-    //   nomeHospede: 'Fulano de Tal',
-    //   dataInicio: '2023-08-10',
-    //   dataFim: '2023-08-15',
-    //   quantidadePessoas: 4,
-    //   status: Status.CANCELADA,
-    // },
-  ];
+  reservationsList: Reservation[] = [];
 }

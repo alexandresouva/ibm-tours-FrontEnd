@@ -20,15 +20,15 @@
   width: min-content;
 }
 
-.status--CONFIRMADA {
+.status--confirmed {
   background-color: #51cf66;
 }
 
-.status--PENDENTE {
+.status--pending {
   background-color: #ffd43b;
 }
 
-.status--CANCELADA {
+.status--canceled {
   background-color: #e03131;
   color: #f2f2f2;
 }

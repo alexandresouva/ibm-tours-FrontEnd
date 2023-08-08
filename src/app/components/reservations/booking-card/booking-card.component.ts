@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Reservation } from 'src/app/models/Reservation';
 import { Status } from 'src/utils/enums/IStatus';
 
 @Component({
@@ -7,14 +8,24 @@ import { Status } from 'src/utils/enums/IStatus';
   styleUrls: ['./booking-card.component.css'],
 })
 export class BookingCardComponent implements OnInit {
-  @Input() reservation = {
+  @Input() reservation: Reservation = {
     id: 1,
-    nomeHospede: 'Fulano de Tal',
-    dataInicio: '2023-08-10',
-    dataFim: '2023-08-15',
-    quantidadePessoas: 4,
+    nomeHospede: '',
+    dataInicio: new Date(), // Convert string to Date object
+    dataFim: new Date(), // Convert string to Date object
+    quantidadePessoas: 0,
     status: Status.CANCELADA,
   };
+
+  reservationStatus(): string {
+    if (this.reservation.status === Status.CONFIRMADA) {
+      return 'status--confirmed';
+    } else if (this.reservation.status === Status.PENDENTE) {
+      return 'status--pending';
+    } else {
+      return 'status--canceled';
+    }
+  }
 
   constructor() {}
 

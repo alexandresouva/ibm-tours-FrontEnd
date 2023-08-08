@@ -1,11 +1,11 @@
 <div class="card">
-  <span class="status status--{{ reservation.status}}"> {{ reservation.status}}</span>
+  <span class="status" [ngClass]="reservationStatus()"> {{ reservation.status}}</span>
   <p class="card__name">{{ reservation.nomeHospede }}</p>
   <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nobis impedit ea numquam
     perspi.</p>
   <div class="card__item card__item--md">
     <p>São Paulo, Brasil</p>
-    <p>{{ reservation.quantidadePessoas }} pessoas</p>
+    <p>{{ reservation.quantidadePessoas }} pessoa(s)</p>
   </div>
   <div class="card__item">
     <span>Início:</span>
@@ -16,7 +16,7 @@
     <p>{{ reservation.dataFim }}</p>
   </div>
   <div class="card__btns">
-    <!-- <img src="../../../../assets/images/icone-editar.png"> -->
-    <img src="../../../../assets/images/icone-excluir.png">
+    <img routerLink="/edit/{{reservation.id}}" src="../../../../assets/images/icone-editar.png">
+    <img routerLink="/delete/{{reservation.id}}" src="../../../../assets/images/icone-excluir.png">
   </div>
 </div>
