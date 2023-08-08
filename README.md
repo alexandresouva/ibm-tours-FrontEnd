@@ -2,7 +2,7 @@
 
 # IBM Tours
 
-O projeto consiste na criação de uma interface que consuma API Rest e permita que hóspedes façam reservas em uma casa de temporada. Foram usados:
+IBM Tours é um sistema que permite que os hóspedes façam reservas em casas de temporada. Esse projeto envolve a criação de uma interface amigável e a integração com API Rest para atender às regras de negócio exigidas. Para isso, foram usados: 
 
 - Angular CLI v. 14.0.0
 - TypeScript
@@ -33,7 +33,7 @@ Atenção: este repositório contém apenas o **front end** da aplicação **IBM
 
 Veja um vídeo curto de demonstração do sistema, front end integrado ao back end. Clique no link abaixo:
 
-[IBM Tour - Video Demonstração](#https://www.youtube.com/embed/UQdPPougiPo)
+[IBM Tour - Video Demonstração](https://www.youtube.com/embed/UQdPPougiPo)
 
 ## Iniciando a aplicação localmente
 
