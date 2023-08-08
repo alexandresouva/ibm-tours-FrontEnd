@@ -1,13 +1,9 @@
 .footer {
-  /* position: absolute; */
-  bottom: 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 6rem 4rem 3rem 4rem;
-  width: 100%;
+  padding: 0 4rem;
 }
 
 .footer__brand {

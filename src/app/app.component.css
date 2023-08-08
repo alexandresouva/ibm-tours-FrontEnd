@@ -1,4 +1,7 @@
 .page-grid {
+  position: relative;
   background-color: #f7f7f7;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: 8rem 1fr 8rem;
 }
