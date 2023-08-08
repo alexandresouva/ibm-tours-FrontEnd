@@ -1,0 +1,24 @@
+.reservations__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+  color: #55c57a;
+  margin-bottom: 5rem;
+}
+
+.reservations__list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 32rem); /* Adaptação automática */
+}
+
+.no-reservations {
+  font-size: 1.6rem;
+}
+
+.no-reservations a:link,
+.no-reservations a:visited {
+  color: inherit;
+}

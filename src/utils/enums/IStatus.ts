@@ -1,0 +1,5 @@
+export enum Status {
+  CONFIRMADA = 'CONFIRMADA',
+  PENDENTE = 'PENDENTE',
+  CANCELADA = 'CANCELADA',
+}

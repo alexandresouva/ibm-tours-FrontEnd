@@ -1,0 +1,68 @@
+.card {
+  display: grid;
+  max-width: 32rem;
+  padding: 4rem 3.5rem;
+  background-color: #fff;
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+
+.status {
+  display: inline-block;
+  padding: 0 0.8rem;
+  margin-bottom: .8rem;
+  border-radius: 100px;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  width: min-content;
+}
+
+.status--CONFIRMADA {
+  background-color: #51cf66;
+}
+
+.status--PENDENTE {
+  background-color: #ffd43b;
+}
+
+.status--CANCELADA {
+  background-color: #e03131;
+  color: #f2f2f2;
+}
+
+.card__name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.card__description {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 2.4rem;
+}
+
+.card__item {
+  display: flex;
+  font-size: 1.4rem;
+  gap: .4rem;
+}
+
+.card__item--md {
+  justify-content: space-between;
+}
+
+.card__btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card__btns img {
+  cursor: pointer;
+}

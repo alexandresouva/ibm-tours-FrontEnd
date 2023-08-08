@@ -1,0 +1,13 @@
+<section class="reservations">
+  <h2 class="reservations__title">Reservas</h2>
+  <div class="reservations__list" *ngIf="reservationsList.length > 0, else noReservations">
+    <div *ngFor="let item of reservationsList">
+      <app-booking-card [reservation]="item"></app-booking-card>
+    </div>
+  </div>
+</section>
+<ng-template #noReservations>
+  <div class="no-reservations">
+    <p>Ainda não há reservas cadastradas. <a routerLink="/create">Faça a sua primeira.</a></p>
+  </div>
+</ng-template>

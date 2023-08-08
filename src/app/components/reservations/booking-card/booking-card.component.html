@@ -1,0 +1,22 @@
+<div class="card">
+  <span class="status status--{{ reservation.status}}"> {{ reservation.status}}</span>
+  <p class="card__name">{{ reservation.nomeHospede }}</p>
+  <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nobis impedit ea numquam
+    perspi.</p>
+  <div class="card__item card__item--md">
+    <p>São Paulo, Brasil</p>
+    <p>{{ reservation.quantidadePessoas }} pessoas</p>
+  </div>
+  <div class="card__item">
+    <span>Início:</span>
+    <p>{{ reservation.dataInicio }}</p>
+  </div>
+  <div class="card__item">
+    <span>Término:</span>
+    <p>{{ reservation.dataFim }}</p>
+  </div>
+  <div class="card__btns">
+    <!-- <img src="../../../../assets/images/icone-editar.png"> -->
+    <img src="../../../../assets/images/icone-excluir.png">
+  </div>
+</div>
