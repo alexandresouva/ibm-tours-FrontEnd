@@ -1,0 +1,11 @@
+<section class="container delete ff-inter">
+  <div class="modal">
+    <p>Sua reserva será cancelada. <br /> Tem certeza?</p>
+    <div class="actions">
+      <button class="btn btn-delete" routerLink="/delete/{{reservation.id}"
+        (click)="deleteReservation()">Confirmar</button>
+      <button class="btn btn-cancel" (click)="cancel()">Cancelar</button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
