@@ -1,0 +1,39 @@
+<div class="form-container">
+  <h2 class="form-title">Edite sua reserva</h2>
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="">Nome do hóspede</label>
+      <input class="form__input" type="text" name="nomeHospede" [(ngModel)]="reservation.nomeHospede">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Início da reserva</label>
+      <input class="form__input" type="date" name="dataInicio" [(ngModel)]="reservation.dataInicio">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Fim da reserva</label>
+      <input class="form__input" type="date" name="dataFim" [(ngModel)]="reservation.dataFim">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Pessoas</label>
+      <input class="form__input" type="number" name="quantidadePessoas" [(ngModel)]="reservation.quantidadePessoas">
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="">Status</label>
+      <select class="form__input" name="status" [(ngModel)]="reservation.status">
+        <option *ngFor="let status of statusOptions" [value]="status">{{ capitalize(status) }}</option>
+      </select>
+    </div>
+
+
+
+    <div class="btns">
+      <button (click)="editReservation($event)" class="form__btn form__bnt--primary">Confirmar</button>
+      <button (click)="cancel()" class="form__btn form__bnt--secondary">Cancelar</button>
+    </div>
+
+  </form>
+</div>
+
+<div class="container">
+  <a routerLink="/list" class="link">Ver todas as reservas &rarr;</a>
+</div>
