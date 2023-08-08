@@ -1,27 +1,44 @@
-# ChallengeIbmFrontEnd
+![Tela inicial da IBM Tours](/src/assets/images/register_screen.gif)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+# IBM Tours
 
-## Development server
+O projeto consiste na criação de uma interface que consuma API Rest e permita que hóspedes façam reservas em uma casa de temporada. Foram usados:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular CLI v. 14.0.0
+- TypeScript
+- Boas práticas de UI/UX
+- HTML e CSS
 
-## Code scaffolding
+Atenção: este repositório contém apenas o **front end** da aplicação **IBM Tours**, desenvolvido para a avaliação técnica da IBM.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ⚙️ O que você irá encontrar aqui
 
-## Build
+### Code
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+:heavy_check_mark: Cadastro de reservas
 
-## Running unit tests
+:heavy_check_mark: Listagem de reservas (por ID ou todas)/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+:heavy_check_mark: Atualização de dados de reservas.
 
-## Running end-to-end tests
+:heavy_check_mark: Cancelamento de reservas.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Design
 
-## Further help
+:heavy_check_mark: 1º Heurística de Nielsen - Mensagens para informar o status do sistema
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+:heavy_check_mark: Visual moderno e atraente
+
+## Demonstração
+
+Veja um vídeo curto de demonstração do sistema, front end integrado ao back end. Clique no link abaixo:
+
+[IBM Tour - Video Demonstração](#https://www.youtube.com/embed/UQdPPougiPo)
+
+## Iniciando a aplicação localmente
+
+Execute `ng serve` para iniciar o servidor de desenvolvimento. A aplicação será inicializada na porta 4200, para visualizá-la acesse: `http://localhost:4200/`. A aplicação será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+
+---
+
+> _“Se você se empenhar o suficiente pode fazer qualquer história resultar.” <div style="text-align: right"> Saul Goodman_ </div>
